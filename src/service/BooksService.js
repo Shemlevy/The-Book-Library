@@ -48,6 +48,7 @@ function setImage(x) {
   if (x) {
     return x.thumbnail;
   } else {
+    
     return "https://github.com/Shemlevy/the-book-library/blob/master/static/bookcover.jpg";
     
   }
