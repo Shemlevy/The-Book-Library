@@ -1,6 +1,6 @@
 <template>
   <div class="book-list-body">
-    <div class="list-container" v-if="books[0]">
+    <div class="list-container" v-if="books">
       <div class="book" v-for="(book, i) in books" :key="i">
         <img @click="editBook(i)" id="book-img" :src="book.img"/>
         <div class="details">
