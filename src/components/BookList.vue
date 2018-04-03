@@ -97,7 +97,6 @@ export default {
   padding: 5px 10px;
 }
 .book-title {
-  line-height: 2;
   text-overflow: ellipsis;
   line-height: 1;
   max-height: 140px;
@@ -119,15 +118,17 @@ export default {
     width: 105px !important;
     height: 161px !important;
   }
-.details {
-  height: 161px;
-}
-  .details h1,
+  .details {
+    height: 161px;
+  }
+  .details > h1,
   h3 {
-    max-height: 70px;
+    max-height: 55px;
     text-overflow: clip;
-    font-size: 1em;
     overflow: hidden;
+  }
+  .details > h1 {
+    font-size: 2em;
   }
 }
 </style>
