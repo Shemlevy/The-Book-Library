@@ -86,6 +86,19 @@ button:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+    select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #eee;
+  }
+}
 </style>
 
 

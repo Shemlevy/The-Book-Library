@@ -216,6 +216,7 @@ export default {
     font: bold 14px sans-serif;
   }
 
+
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -227,6 +228,12 @@ export default {
 
   .footer-distributed .footer-center i {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-distributed h3 {
+    font-size: 28px;
   }
 }
 </style>

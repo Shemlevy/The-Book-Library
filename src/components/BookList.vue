@@ -92,7 +92,7 @@ export default {
   text-transform: capitalize;
 }
 .details {
-  width: 172px;
+  width: 185px;
   height: 198px;
   padding: 5px 10px;
 }
