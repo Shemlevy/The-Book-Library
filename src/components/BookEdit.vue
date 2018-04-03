@@ -65,7 +65,7 @@ export default {
         authors: "",
         title: "",
         date: new Date(),
-        img: "../../static/bookcover.jpg"
+        img: "static/bookcover.jpg"
       };
     } else {
       this.book = { ...this.currBook };

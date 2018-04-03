@@ -44,7 +44,7 @@ export default {
   align-items: flex-end;
 }
 .manu {
-  margin: 2vw 50% 0 0;
+  margin: 2vw 30% 0 0;
   display: flex;
   flex-flow: column;
 }
@@ -76,7 +76,7 @@ input {
   outline: none;
   border:none;
   background-color: rgb(251, 255, 37);
-  margin: 1.5vw 50%;
+  margin: 1.5vw 30%;
 
 }
 
@@ -87,7 +87,7 @@ input {
   border-radius: 8px;
   line-height: 1em;
   outline: none;
-  margin: 1.5vw 50%;
+  margin: 1.5vw 30%;
 }
 .fade-enter-active,
 .fade-leave-active {
