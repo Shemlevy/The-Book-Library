@@ -53,7 +53,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.body{
+.body {
   max-width: 1260px;
 }
 .divider {
@@ -96,14 +96,12 @@ export default {
 
 .footer-distributed h3 {
   color: rgb(97, 7, 89);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 36px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 900;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-
-
 
 /* Footer links */
 
