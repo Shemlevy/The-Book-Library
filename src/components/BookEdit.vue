@@ -4,7 +4,7 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="book-footer">
-            <img class="book-img" :src="book.img">
+            <img id="book-img" :src="book.img">
             <div class="details">
               <input :class="{'error-input':!this.errors.title}" placeholder="How do you call it?" type="text" v-model="book.title">
               <transition name="fade" mode="in-out" >

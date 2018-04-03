@@ -39,13 +39,12 @@ export default {
 <style scoped>
 .main-container {
   background-color: rgb(55, 143, 102);
-  max-width: 50vw;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
 }
 .manu {
-  margin: 2vw 4vw 0 0;
+  margin: 2vw 50% 0 0;
   display: flex;
   flex-flow: column;
 }
@@ -56,7 +55,7 @@ li {
   padding: 5px 8px;
   line-height: 7vw;
   font-size: 3.5vw;
-  font-weight: 1000;
+  font-weight: 900;
   text-align: center;
   list-style-type: none;
   cursor: pointer;
@@ -72,10 +71,13 @@ input {
   width: 28vw;
   padding: 5px 8px;
   border-radius: 8px;
-  font-size: 1em;
+  font-size: 1.5em;
   border: 1px solid ghostwhite;
   outline: none;
-  margin: 1.5vw 4vw;
+  border:none;
+  background-color: rgb(251, 255, 37);
+  margin: 1.5vw 50%;
+
 }
 
 .spacer {
@@ -85,7 +87,7 @@ input {
   border-radius: 8px;
   line-height: 1em;
   outline: none;
-  margin: 1.5vw 4vw;
+  margin: 1.5vw 50%;
 }
 .fade-enter-active,
 .fade-leave-active {

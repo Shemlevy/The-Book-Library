@@ -33,11 +33,11 @@ export default {
 
 <style scoped>
 .main-container {
-  max-width: 50vw;
+  /* max-width: 50vw; */
   background-color: rgb(55, 143, 102);
 }
 .wrapper {
-  margin: 12vw 0 5vw 12vw;
+  margin: 14vw 0 5vw 20vw;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -53,22 +53,21 @@ export default {
 .text .line {
   overflow: hidden;
   white-space: nowrap;
-  height: 4vw;
-  line-height: 0.9;
+  height: 4.6vw;
 }
 .text .line:first-child + .line {
-  margin-left: 6.9vw;
+  margin-left: 7vw;
 }
 .text .line:first-child + .line + .line {
-  margin-left: 12.9vw;
+  margin-left: 13vw;
 }
 .text .line > p {
   text-shadow: 2px 2px 2px white;
   margin: 0;
   height: 5.65vw;
   overflow: hidden;
-  font-size: 1em;
-  line-height: 0.9;
+  font-size: 1.2em;
+  line-height: 1;
   white-space: nowrap;
   animation: moveWords 6s infinite ease;
 }
