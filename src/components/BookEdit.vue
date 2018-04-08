@@ -6,10 +6,10 @@
           <div class="book-footer">
             <img id="book-img" :src="book.img">
             <div class="details">
-              <input :class="{'error-input':!this.errors.title}" placeholder="How do you call it?" type="text" v-model="book.title">
+              <input :class="{'error-input':!this.errors.title || !this.errors.duplicateTitle}" placeholder="How do you call it?" type="text" v-model="book.title">
               <transition name="fade" mode="in-out" >
                 <div>
-                  <span class="error" v-if="!this.errors.duplicateTitle">This title has been used</span>  
+                  <span class="error shake" v-if="!this.errors.duplicateTitle">This title has been used</span>  
                   <span class="error" v-if="!this.errors.title">Give it a title.</span>
                   <span class="spacer" v-if="this.errors.duplicateTitle && this.errors.title"></span>   
                 </div>
@@ -125,7 +125,7 @@ export default {
 <style scoped>
 .modal-mask {
   position: fixed;
-  z-index: 2;
+  z-index: 200;
   top: 0;
   left: 0;
   width: 100%;
@@ -170,11 +170,6 @@ input {
   margin: 2px;
   border: 1px solid black;
   border-radius: 8px;
-}
-.error-input{
-  animation-name: shake;
-  animation-duration: 0.2s;
-  border: 1px solid red;
 }
 
 .description {
@@ -221,41 +216,20 @@ input {
   margin-top: 30px;
 }
 
-.delete-btn {
-  background-color: rgb(192, 0, 0);
-}
-.delete-btn:hover {
-  background-color: rgb(169, 255, 112);
-}
+
 
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.error {
-  font-size: 0.9em;
-  padding-left: 5px;
-  font-weight: 600;
-  color: rgb(230, 4, 4);
-  animation-name: shake;
-  animation-duration: 0.2s;
-}
+
 
 .spacer {
   margin: 10px;
 }
 
-.no-match {
-  margin-top: 20px;
-  text-align: center;
-  line-height: 1;
-  font-size: 2em;
-  font-weight: 700;
-  color: white;
-  background-color: rgb(253, 67, 92);
-  padding: 20px;
-}
+
 
 @keyframes shake {
   from,

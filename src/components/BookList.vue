@@ -103,16 +103,6 @@ export default {
   overflow: hidden;
 }
 
-.no-match {
-  margin-top: 20px;
-  text-align: center;
-  line-height: 1;
-  font-size: 2em;
-  font-weight: 700;
-  color: white;
-  background-color: rgb(253, 67, 92);
-  padding: 20px;
-}
 @media (max-width: 880px) {
   #book-img {
     width: 105px !important;

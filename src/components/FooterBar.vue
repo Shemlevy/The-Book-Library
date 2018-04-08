@@ -1,10 +1,10 @@
 <template>
 <div>
-  <div class="divider"></div>
-    <footer class="footer-distributed">
+  <div class="divider transition-color"></div>
+    <footer class="footer-distributed transition-color">
       <div class="body">
         <div class="footer-left">
-          <h3>The Books Library</h3>
+          <h3 class="transition-color">The Books Library</h3>
           <p class="footer-links">
             <a href="#">Home</a>·
             <a href="#">Login</a>·
@@ -59,12 +59,12 @@ export default {
 .divider {
   clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
   height: 10vh;
-  background-color: gainsboro;
+  background-color: var(--footer-color);
 }
 .footer-distributed {
   display: flex;
   justify-content: center;
-  background-color: gainsboro;
+  background-color: var(--footer-color);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100vw;
@@ -95,12 +95,12 @@ export default {
 /* The company logo */
 
 .footer-distributed h3 {
-  color: rgb(97, 7, 89);
+  color:var(--logo-color);
   font-family: 'Anton', sans-serif;
   font-size: 36px;
   margin: 0;
   font-weight: 900;
-  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);  
 }
 
 /* Footer links */

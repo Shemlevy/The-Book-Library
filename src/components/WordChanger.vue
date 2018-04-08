@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="main-container transition-color">
     <div class="wrapper">
       <h1 class="text">
         <div class="line">
@@ -33,8 +33,7 @@ export default {
 
 <style scoped>
 .main-container {
-  /* max-width: 50vw; */
-  background-color: rgb(55, 143, 102);
+  background-color: var(--header-color);
 }
 .wrapper {
   margin: 14vw 0 5vw 20vw;

@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .modal-mask {
   position: fixed;
-  z-index: 2;
+  z-index: 300;
   top: 0;
   left: 0;
   width: 100%;
@@ -105,12 +105,6 @@ p span {
   margin-top: 30px;
 }
 
-.delete-btn {
-  background-color: rgb(192, 0, 0);
-}
-.delete-btn:hover {
-  background-color: rgb(169, 255, 112);
-}
 
 .modal-enter .modal-container,
 .modal-leave-active .modal-container {
