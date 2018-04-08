@@ -68,9 +68,6 @@ export default {
       ]
     };
   },
-  created() {
-    console.log(this.colorsPalette);
-  },
   methods: {
     changeColor(palette) {
       let html = document.getElementsByTagName("html")[0];
@@ -121,10 +118,6 @@ export default {
 .label:hover {
   cursor: default;
 }
-
-
-
-
 .palette {
   background-color: #fff;
   margin-top: -0.8vw;
