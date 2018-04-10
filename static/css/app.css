@@ -104,3 +104,13 @@ button:hover {
     font-size: 16px;
   }
 }
+:root{
+  /* color vars */
+  --header-color:rgb(55, 143, 102);
+  --nav-color: rgb(251, 255, 37);
+  --nav-hover-color: black;
+  --btn-color:#0ddf99;
+  --btn-hover-color: orange;
+  --footer-color: gainsboro;
+  --logo-color:  rgb(97, 7, 89);
+}
