@@ -1,15 +1,15 @@
 <template>
   <div class="palettes-container transition-color">
-    <button @mouseover="colorsPalette[i].show = true" @mouseout="colorsPalette[i].show = false" class="btn-color" v-for="(palette,i) in colorsPalette" :key="i">
+    <button @click="colorsPalette[i].show = !colorsPalette[i].show" @blur="colorsPalette[i].show = false" class="btn-color" v-for="(palette,i) in colorsPalette" :key="i">
       <transition name="rise-in" mode="in-out" >
-        <div v-if="palette.show" class="color-container" @click="changeColor(palette.color)">
+        <div v-if="palette.show" class="color-container" @click="changeColor(palette)">
           <div class="palette" v-for="(color, i) in palette.color" :key="i">
             <div class="color" :style="`background-color:${color};`"></div>
           </div>
         </div>
       </transition>
     </button>
-    <p class="label transition-color">Change The Colors</p>
+    <p class="label">Change The Colors</p>
   </div>
 </template>
 
@@ -17,7 +17,6 @@
 export default {
   data() {
     return {
-      show: false,
       title: ["change", "the", "color"],
       colorsPalette: {
         default: {
@@ -69,10 +68,10 @@ export default {
     };
   },
   methods: {
-    changeColor(palette) {
+    changeColor(palette, i) {
       let html = document.getElementsByTagName("html")[0];
       this.cssVars.forEach((e, i) => {
-        html.style.setProperty(e, palette[i]);
+        html.style.setProperty(e, palette.color[i]);
       });
     }
   },
@@ -144,7 +143,7 @@ export default {
   }
 }
 @media (max-width: 700px) {
-  p {
+  .label {
     margin-left: -0.2vw;
   }
 }
